@@ -1,0 +1,17 @@
+# The plugin's manifest. Draft: the code still lives in keel-v2, so nothing is released yet.
+# Format: https://github.com/MiladNalbandi/keel-v2/tree/main/docs/plugins/02-plugin-package.md
+schema: 1
+name: code
+title: "Code"
+version: 0.0.0
+publisher: keel
+summary: "The Code page: files, search, an editor and the changes on your branch. It is a host: Git, Code Review, Database and CI/CD add their tabs to it."
+repo: https://github.com/MiladNalbandi/keel-plugin-code
+license: MIT
+
+requires:
+  sdk: 1
+
+parts:
+  api: { jars: [api/keel-plugin-code.jar] }
+  web: { entry: web/index.js }
